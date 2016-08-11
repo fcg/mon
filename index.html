@@ -22,27 +22,27 @@
                 <form action="https://formspree.io/even@flyabroad.hk" method="POST">
                     <div class="form-group">
                         <label for="name">占位号提供者姓名（亲友团提供的号码也算你的姓名）：</label>
-                        <input type="text" class="form-control" id="name" placeholder="您的姓名，请填写完整">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="您的姓名，请填写完整">
                     </div>
                     <div class="form-group">
                         <label for="email">您的邮箱（我们可以方便的通过该邮箱直接联系您，而不需要加好友）:</label>
-                        <input type="email" class="form-control" id="email" placeholder="填写准确的 email 地址">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="填写准确的 email 地址">
                     </div>
                     <div class="form-group">
-                        <label for="number">占位号码:</label>
-                        <input type="text" class="form-control" id="number" placeholder="界面里小人下面 Votre numero de file d'attente 后面的不变的数字就是占位号">
+                        <label for="number">占位号码(20000 之内的都可以提供):</label>
+                        <input type="text" class="form-control" name="number" id="number" placeholder="界面里小人下面 Votre numero de file d'attente 后面的不变的数字就是占位号">
                     </div>
                     <div class="form-group">
                         <label for="qq">电话号码，QQ 或微信（方便我们即使与您联系）：</label>
-                        <input type="text" class="form-control" id="qq" placeholder="优先提供电话号码，其次是 QQ 号码，也可以是微信号">
+                        <input type="text" class="form-control" name="qq-phone" id="qq" placeholder="优先提供电话号码，其次是 QQ 号码，也可以是微信号">
                     </div>
                     <div class="form-group">
                         <label for="flyer">您的飞出国负责人姓名或负责人编号（没有可不填）：</label>
-                        <input type="text" class="form-control" id="flyer" placeholder="如果您是客户，请填写您的负责人姓名或编号。非客户可以不填该项。">
+                        <input type="text" class="form-control" name="flyer" id="flyer" placeholder="如果您是客户，请填写您的负责人姓名或编号。非客户可以不填该项。">
                     </div>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox">该号码是否留作自用（如果选择该项，那么我们将不再为您提供号码调配）</label>
+                            <input type="checkbox" name="checkbox">该号码是否留作自用（如果选择该项，那么我们将不再为您提供号码调配）</label>
                     </div>
                     <button type="submit" class="btn btn-default">点击这里提交给飞出国，感谢您的支持，您提供的占位号成功被别人使用后，您将获得红包奖励</button>
                 </form>
